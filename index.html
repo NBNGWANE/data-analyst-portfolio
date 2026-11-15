@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ngcebo Hlongwane | Data Analyst Portfolio</title>
+  <style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f4f7fb;
+      color: #1b293b;
+      line-height: 1.6;
+    }
+    header {
+      background: #102b4e;
+      color: white;
+      padding: 22px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    header strong { font-size: 20px; }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 18px;
+    }
+    .hero {
+      background: linear-gradient(125deg, #102b4e, #087cc1);
+      color: white;
+      padding: 95px 8%;
+    }
+    .hero h1 {
+      font-size: clamp(32px, 5vw, 54px);
+      margin: 0 0 15px;
+    }
+    .hero p { max-width: 650px; font-size: 18px; }
+    .button {
+      display: inline-block;
+      background: #18a66a;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 16px;
+    }
+    main { max-width: 1150px; margin: auto; padding: 30px 20px; }
+    section { padding: 35px 0; }
+    h2 { color: #103b70; font-size: 28px; }
+    .skills { display: flex; flex-wrap: wrap; gap: 12px; }
+    .skill {
+      background: white;
+      padding: 12px 20px;
+      border-radius: 8px;
+      border: 1px solid #e0e7ef;
+      font-weight: 600;
+    }
+    .project {
+      background: white;
+      padding: 28px;
+      border-radius: 14px;
+      box-shadow: 0 5px 25px #102b4e12;
+    }
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 12px;
+      margin: 20px 0;
+    }
+    .metric {
+      background: #f0f6ff;
+      border-radius: 8px;
+      padding: 16px;
+    }
+    .metric strong {
+      display: block;
+      font-size: 25px;
+      color: #1266b5;
+    }
+    .metric span { font-size: 13px; }
+    .project img {
+      width: 100%;
+      border-radius: 8px;
+      border: 1px solid #e0e7ef;
+      margin-top: 15px;
+    }
+    footer {
+      background: #102b4e;
+      color: white;
+      text-align: center;
+      padding: 24px;
+    }
+    footer a { color: #9edbff; }
+    @media(max-width: 600px) {
+      header, .hero { padding-left: 6%; padding-right: 6%; }
+      nav a { margin: 0 12px 0 0; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <strong>NH | DATA PORTFOLIO</strong>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Hi, I'm Ngcebo Hlongwane.</h1>
+    <h2 style="color:#a8e2ff">Data Analyst | Power BI | SQL</h2>
+    <p>
+      BSc Computer Science & IT graduate passionate about
+      transforming data into meaningful business insights
+      through interactive dashboards, reporting and analytics.
+    </p>
+    <a class="button" href="#projects">Explore My Projects</a>
+  </div>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am a Computer Science and Information Technology
+        graduate from the University of KwaZulu-Natal.
+        My background includes SQL reporting, data analysis,
+        software development and data visualization.
+        I enjoy using technology to solve business problems
+        and communicate insights clearly.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <div class="skills">
+        <span class="skill">Power BI</span>
+        <span class="skill">SQL</span>
+        <span class="skill">Python</span>
+        <span class="skill">Microsoft Excel</span>
+        <span class="skill">Data Visualization</span>
+        <span class="skill">Data Analysis</span>
+        <span class="skill">SSRS</span>
+        <span class="skill">Data Reporting</span>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Featured Project</h2>
+      <article class="project">
+        <h3>Sales Performance Dashboard | Power BI</h3>
+        <p>
+          An interactive sales analytics dashboard designed
+          to monitor revenue, costs, profit margins, product
+          performance and regional sales trends.
+        </p>
+
+        <div class="metrics">
+          <div class="metric">
+            <strong>R192K</strong>
+            <span>Total Revenue</span>
+          </div>
+          <div class="metric">
+            <strong>R54K</strong>
+            <span>Total Profit</span>
+          </div>
+          <div class="metric">
+            <strong>28.05%</strong>
+            <span>Profit Margin</span>
+          </div>
+          <div class="metric">
+            <strong>10</strong>
+            <span>Total Orders</span>
+          </div>
+        </div>
+
+        <p>
+          <b>Tools:</b> Power BI, DAX, Data Visualization
+        </p>
+        <p>
+          <b>Features:</b> Interactive product and region
+          filters, monthly revenue analysis, profitability
+          tracking and product comparisons.
+        </p>
+
+        <!-- Dashboard screenshot will be added next -->
+      </article>
+    </section>
+
+    <section id="contact">
+      <h2>Let's Connect</h2>
+      <p>
+        Interested in discussing data analytics,
+        reporting or business intelligence opportunities?
+      </p>
+      <a class="button"
+         href="https://github.com/NBNGWANE"
+         target="_blank" rel="noopener noreferrer">
+        View My GitHub
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <p>Ngcebo Hlongwane | Data Analyst Portfolio</p>
+    <p>Built with HTML & CSS | 2026</p>
+  </footer>
+</body>
+</html>
